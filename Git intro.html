@@ -1,0 +1,51 @@
+Git inro
+
+
+-Git is a version control system
+-Each developer starts with a Git
+-Each developer has their own local repository where they code and changes
+-Each developer submits their perspective code to the remote repository 
+where each developers code is analyzed
+
+Git history and branches
+
+-Branches are timeline in github
+-Git tracks history called commit
+-Commit is a change we made
+-Commit is like a checkpoint a way to return to the previous code and make changes
+-We make changes in local repositories and commit
+-We can make multiple commits
+-Then push them up to the local repository
+-Pull happens then pulling all the changes happened in the remote repository to the local repository
+-Merge happens with the local repository after this pull
+-And combine them with whatever work already going on in local repository
+
+-Master branches contains the timelines of all the changes happened
+-the last commit is the recent change
+-another side branch is created for code changes instead not actually affecting the master branch
+-infinite number of sub branches can be created while working on complicated projects
+
+Basic command to initialize
+
+git config --global user.email "gokulchandan18@gmail.com"
+
+git config --global user.name "Gokul"
+
+cd desktop
+mkdir test_repo
+cd test_repo
+git init
+git commit
+git add readme.md
+git status 
+git commit -m "added readme.md"
+git add .
+git commit -m "made changes"
+git checkout -b new
+git commit -m "first commit on new branch"
+git checkout master
+git merge master
+
+//Remote is a url to another repository
+
+git remote add origin https://github.com/codegritt/test_.git
